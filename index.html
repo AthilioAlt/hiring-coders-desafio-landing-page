@@ -4,9 +4,68 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/style.css">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
     <title>Ofertas imperdíveis!</title>
 </head>
 <body>
-    
+    <main>
+        <section class="section-container section-one">
+            <header>
+                <h1>Black Friday</h1>
+                <p>Não perca nossas ofertas</p>
+            </header>
+            <a href="#cadastro">
+                <button class="btn btn-red">cadastre-se</button>
+            </a>
+        </section>
+
+        <section class="section-container section-two">
+            <div class="div-img">
+                <picture>
+                    <source media="(max-width: 480px)" srcset="images/eletronicos-320.png" type="image/png">
+                    <source media="(max-width: 600px)" srcset="images/eletronicos-480.png" type="image/png">
+                    <source media="(max-width: 800px)" srcset="images/eletronicos-600.png" type="image/png">
+                    <source media="(max-width: 1024px)" srcset="images/eletronicos-800.png" type="image/png">
+                    <source media="(max-width: 1280px)" srcset="images/eletronicos-600.png" type="image/png">
+                    <img src="images/eletronicos-800.png" alt="Eletrodomésticos e Eletroeletrônicos">
+                </picture>
+            </div>
+
+            <div class="div-text">
+                <header>
+                    <h2>Receba nossas promoções em primeira mão</h2>
+                    <p>
+                        Tenha acesso as nossas promoções antes de todo mundo, basta cadastrar seu melhor email e esperar que logo logo te mandaremos ofertas exclusivas. Não percar essa oportunidade de sair na frente, é só se cadastrar.
+                    </p>
+                    <a href="#cadastro"><button class="btn btn-red">cadastre-se</button></a>
+                </header>
+            </div>
+        </section>
+
+        <section class="section-container section-three" id="cadastro">
+            <div class="card" id="content">
+                <header>
+                    <h2>Cadastre-se aqui para não perder nossas ofertas</h2>
+                </header>
+
+                <div>
+                    <form id="form">
+                        <input type="text" placeholder="Nome" id="nome">
+                        <input type="text" placeholder="E-mail" id="email">
+                        <input type="submit" value="Cadastrar" class="btn-red">
+                    </form>
+                </div>
+            </div>
+
+        </section>
+
+        <footer>
+            <p>
+                Todos os direitos reservados
+            </p>
+        </footer>
+    </main>
 </body>
+<script src="scripts/script.js"></script>
 </html>
