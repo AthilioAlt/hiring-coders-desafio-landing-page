@@ -120,7 +120,7 @@ input{
 
 input:focus{
     outline: 0;
-    box-shadow: 0 0 5px 3px #f04732;
+    box-shadow: 0 0 5px 3px rgba(251, 255, 6, 0.89);
 }
 
 .btn-red:focus{
